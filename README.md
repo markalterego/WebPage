@@ -1,2 +1,2 @@
 # WebPage
-Webpage for a course, University Of Applied Sciences
+Webpage for a course in University Of Applied Sciences
