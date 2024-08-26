@@ -3,17 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    
+    <style> 
+        .headerContainer {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .contentContainer {
+            display: inline-flex;
+        }
+
+        .linkContainer {
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        #links {
+            padding-left: 10px;
+            padding-right: 30px;
+            list-style: none;
+        }
+
+        
+
+    </style>
+
 </head>
 <body>
-    <h1>My Personal Biography</h1>
-    <p>Hello everybody!</p>
-    <p>My name is Jesse and I study Information Technology at Oulu University Of Applied Sciences</p>
-    <p>My hobbies include:</p>
-    <ul>
-        <li>Working out</li>
-        <li>Playing games</li>
-        <li>Drinking coffee</li>
-    </ul>
+    <div class="headerContainer">
+        <h1 id="home">Home Page</h1>
+    </div>
+
+    <div class="contentContainer">
+        <div class="linkContainer">
+            <h3>Links:</h3>
+            <ul id="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="mainContainer">
+            <h2 id="about">About Me:</h2>
+            <p>Hello everybody!</p>
+            <p>My name is Jesse and I study Information Technology at Oulu University Of Applied Sciences</p>
+            <p>My hobbies include:</p>
+            <ul>
+                <li>Working out</li>
+                <li>Playing games</li>
+                <li>Drinking coffee</li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>
