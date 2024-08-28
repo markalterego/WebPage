@@ -5,59 +5,62 @@
     <title>Home Page</title>
     
     <style> 
-        .headerContainer {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-        }
-        
-        .contentContainer {
-            display: inline-flex;
-        }
-
-        .linkContainer {
-            display: inline-flex;
-            justify-content: center;
+        body
+        {
+            display: grid;
+            grid-template-columns: 16rem 1fr 16rem;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header header"
+                "side main main";
+            min-height: 100vh;
         }
 
-        #links {
-            padding-left: 10px;
-            padding-right: 30px;
-            list-style: none;
+        .headerContainer 
+        {
+            grid-area: header;
+            text-align: center;
         }
 
-        
+        .sideContainer
+        {
+            grid-area: side;
+            padding-left: 50px;   
+        }
 
+        .mainContainer
+        {
+            grid-area: main;
+        }
     </style>
 
 </head>
 <body>
     <div class="headerContainer">
-        <h1 id="home">Home Page</h1>
+        <header id="home"><h1><u>Home Page</u></h1></header>
     </div>
 
-    <div class="contentContainer">
-        <div class="linkContainer">
-            <h3>Links:</h3>
-            <ul id="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <div class="sideContainer">
+        <nav id="links">
+            <h3><u>Links</u><br></h3>
+            <a href="#home">Home<br></a>
+            <a href="#about">About<br></a>
+            <a href="#portfolio">Portfolio<br></a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 
-        <div class="mainContainer">
-            <h2 id="about">About Me:</h2>
-            <p>Hello everybody!</p>
-            <p>My name is Jesse and I study Information Technology at Oulu University Of Applied Sciences</p>
-            <p>My hobbies include:</p>
-            <ul>
-                <li>Working out</li>
-                <li>Playing games</li>
-                <li>Drinking coffee</li>
-            </ul>
-        </div>
+    <div class="mainContainer">
+        
+        <h2 id="about">About Me:</h2>
+        <p>Hello everybody!</p>
+        <p>My name is Jesse and I study Information Technology at Oulu University Of Applied Sciences</p>
+        <p>My hobbies include:</p>
+        <ul>
+            <li>Working out</li>
+            <li>Playing games</li>
+            <li>Drinking coffee</li>
+        </ul>
     </div>
 
 </body>
