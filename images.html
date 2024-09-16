@@ -3,57 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Images</title>
-
-    <style> 
-        .mainContent
-        {
-            display: grid;
-            grid-template-columns: auto auto;
-            align-items: center;
-            justify-items: center;
-        }
-
-        header
-        {
-            text-align: center;
-            padding-bottom: 30px;
-        }
-
-        @media (max-width: 1350px) {
-            .mainContent{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: fit-content;
-            }
-
-            header{
-                padding-bottom: 10px;
-            }
-
-            figure{
-                padding-bottom: 30px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/images.css"> 
 </head>
 <body>
-    <nav>
-        <a href="./index.html">Return To Home Page</a>
-    </nav>
+    <div class="headerContainer">
+        <header><h1><u>I present thyself with images</u></h1></header>
+    </div>
+    
+    <div class="sideContainer">
+        <nav id="links">
+            <a href="./index.html">Return To Home Page</a>
+        </nav>
+    </div>
 
-    <header><h1><u>I present thyself with images</u></h1></header>
-
-    <div class="mainContent">
+    <div class="mainContainer">
         <figure>
-            <img src="https://i.ibb.co/2FF7hQV/punpunpun.png" alt="Eccentric man">
+            <img src="https://i.ibb.co/2FF7hQV/punpunpun.png" alt="Eccentric Man">
             <figcaption>Oyasumi Punpun - Volume 9, Chapter 90</figcaption>
         </figure>
 
         <figure>
-            <img src="./assets/pictures/klassikko.PNG" alt="CS2 funny">
+            <img src="./assets/pictures/klassikko.PNG" alt="CS2 Funny">
             <figcaption>CS2 player doesn't approve of OSU!</figcaption>
         </figure>
     </div>
+    
 </body>
 </html>

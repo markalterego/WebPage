@@ -1,0 +1,45 @@
+body
+{
+    background-color: aliceblue;
+}
+
+.headerContainer
+{
+    padding-top: 30px; 
+    text-align: center;
+}
+
+.sideContainer
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.mainContainer
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (max-width: 1350px) {
+    .mainContainer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    figure{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+    }
+}
