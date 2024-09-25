@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Surveys</title>
     <link rel="stylesheet" href="./assets/css/surveys.css">
+
 </head>
 <body>
     <div class="headerContainer">
@@ -19,17 +20,47 @@
     <div class="mainContainer">
         <h2>Survey 1</h2>
         <article id="query_1">
-            <p>Option 1 []</p>
-            <p>Option 2 []</p>
-            <p>Option 3 []</p>
+            <form id="animalForm">
+                <p>Which one is better?</p>
+                
+                <input type="radio" name="animalQuestion" id="dogs" value="dogs">
+                <label for="dogs">Dogs</label><br>
+                
+                <input type="radio" name="animalQuestion" id="cats" value="cats">
+                <label for="cats">Cats</label><br>
+
+                <input type="radio" name="animalQuestion" id="other" value="other">
+                <label for="other">Other</label><br>
+
+                <input type="submit" value="Submit" id="animalQuestionSubmit">
+            </form>
+
+            <p id="animalFormAnswer"></p>
+
         </article>
 
         <h2>Survey 2</h2>
         <article id="query_2">
-            <p>Here lies survey numero dos:</p>
-            <p>Option 1 []</p>
-            <p>Option 2 []</p>
-            <p>Option 3 []</p>
+            <form id="icecreamForm">
+                <p>Which ice cream flavors do you like?</p>
+                
+                <input type="checkbox" name="icecreamQuestion" id="vanilla" value="vanilla">
+                <label for="vanilla">Vanilla</label><br>
+
+                <input type="checkbox" name="icecreamQuestion" id="chocolate" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+
+                <input type="checkbox" name="icecreamQuestion" id="strawberry" value="strawberry">
+                <label for="strawberry">Strawberry</label><br>
+
+                <input type="checkbox" name="icecreamQuestion" id="other2" value="other2">
+                <label for="other2">Other</label><br>
+
+                <input type="submit" value="Submit" id="icecreamQuestionSubmit">
+            </form>
+
+            <div id="icecreamFormAnswer"></div>
+
         </article>
         
         <h2>Survey 3</h2>
@@ -41,5 +72,6 @@
         </article>
     </div>
     
+    <script src="./assets/js/surveys_script.js"></script>
 </body>
 </html>
