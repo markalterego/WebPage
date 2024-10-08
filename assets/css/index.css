@@ -12,8 +12,8 @@ body
 
 .headerContainer
 {
-    padding-top: 30px; 
     grid-area: header;
+    padding-top: 30px; 
     text-align: center;
 }
 
@@ -45,13 +45,26 @@ p
 {
     margin-top: 7px;
     margin-bottom: 7px;
+    font-size: 17px;
 }
 
-ul{
+ul
+{
     list-style-type: none;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 17px; 
+}
+
+a
+{
+    padding-right: 4px;
+}
+
+address
+{
+    font-size: 17px;
 }
 
 @media (max-width: 1200px){
@@ -73,10 +86,6 @@ ul{
 
     .mainContainer{
         text-align: center;
-    }
-
-    a{
-        padding: 3px;
     }
 
     h3{ /* remove links header */
