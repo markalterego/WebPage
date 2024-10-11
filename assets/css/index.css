@@ -8,6 +8,10 @@ body
         "header header header"
         "side main side2";
     min-height: 100vh;
+
+    margin: 10px;
+
+    border-style: groove;
 }
 
 .headerContainer
@@ -15,6 +19,8 @@ body
     grid-area: header;
     padding-top: 30px; 
     text-align: center;
+
+    border-style: inherit;
 }
 
 .sideContainer
@@ -22,18 +28,39 @@ body
     grid-area: side;
     padding-left: 50px;
     padding-bottom: 30px;
+    
+    border-style: inherit;
 }
 
 .mainContainer
 {
     grid-area: main;
     text-align: center;
+
+    border-style: inherit;
 }
 
 .sideContainer2
 {
     grid-area: side2;
     text-align: center;
+
+    border-style: inherit;
+}
+
+.imageColumn
+{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 article
@@ -57,42 +84,53 @@ ul
     font-size: 17px; 
 }
 
-a
-{
-    padding-right: 4px;
-}
-
 address
 {
+    margin-top: 7px;
     font-size: 17px;
 }
 
-@media (max-width: 1200px){
-    body{
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        width: fit-content;
+@media (max-width: 1400px) { /* two images per row -> one image per row*/
+    .imageColumn{
+        float: none;
+        width: 100%;
     }
+}
 
-    .headerContainer{
-        padding-bottom: 0;
+@media (max-width: 1200px) { /* layout change for smaller screens */
+    body{
+        display: flex;
+        flex-direction: column;
     }
 
     .sideContainer{
-        padding-left: 0;
+        padding: 0;
         text-align: center;
+    }
+
+    #links{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .mainContainer{
+        flex-grow: 1; 
         text-align: center;
     }
 
-    h3{ /* remove links header */
+    h2{ /* remove links header */
         display: none;
+    }
+
+    a{ /* adding padding to links */
+        padding-right: 4px;
     }
 
     .sideContainer br{ /* remove linebreaks from links */
         display: none;
+    }
+
+    .sideContainer2:empty{ /* if sidecontainer2 empty -> hide it's border*/
+        border: none;
     }
 }
