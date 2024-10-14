@@ -1,5 +1,5 @@
 Github Pages: https://markalterego.github.io/WebPage/
-
+´´´
 HTML:
     1. Basic HTML structure is present.
         Examples: 
@@ -53,12 +53,12 @@ CSS:
             index.css -> line: 1
                 - body tag selector is used to define important
                   document-wide modifications, such as: 
-                    >background-color: aliceblue
-                    >font-family: 'Times New Roman', Times, serif;
+                    > background-color: aliceblue
+                    > font-family: 'Times New Roman', Times, serif;
             index.css -> line: 19 & 37
                 - these lines define class selectors, in this case:
-                    >.headerContainer
-                    >.mainContainer
+                    > .headerContainer
+                    > .mainContainer
             index.css -> line: 113
                 - this line defines an id selector by the name #links
     
@@ -128,8 +128,7 @@ CSS:
 JavaScript Basics:
     1. Simple interactions (like alerts on button click).
         Examples:
-            
 
-                  
 
-            
+        
+´´´
