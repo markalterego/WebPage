@@ -1,6 +1,7 @@
 Github Pages: https://markalterego.github.io/WebPage/
 
-```HTML:
+```
+HTML:
     1. Basic HTML structure is present.
         Examples: 
             index.html -> line: 1 
