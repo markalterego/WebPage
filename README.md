@@ -1,6 +1,6 @@
 Github Pages: https://markalterego.github.io/WebPage/
-´´´
-HTML:
+
+```HTML:
     1. Basic HTML structure is present.
         Examples: 
             index.html -> line: 1 
@@ -129,6 +129,4 @@ JavaScript Basics:
     1. Simple interactions (like alerts on button click).
         Examples:
 
-
-        
-´´´
+```
