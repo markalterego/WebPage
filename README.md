@@ -6,37 +6,37 @@ HTML:
             index.html -> line: 1 
                 - index.html starts with a document type declaration
             index.html -> line: 9 - 33
-                - the visible part of the document is inside the <body> tag 
+                - the visible part of the document is inside the body tag 
             index.html -> line: 11 & 16
-                - the most important heading is defined with the <h1> tag
-                - the second most important heading is defined with the <h2> tag
+                - the most important heading is defined with the h1 tag
+                - the second most important heading is defined with the h2 tag
     
     2. HTML structure with clear content differentiation (headings, paragraphs, lists).
         Examples:
             index.html -> line: 11
-                - the heading of the page is defined with the <h1> tag
+                - the heading of the page is defined with the h1 tag
             index.html -> line: 28
-                - the main paragraph of the page is defined with the <p> tag 
+                - the main paragraph of the page is defined with the p tag 
             about.html -> line: 31 - 35
-                - a list containing my hobbies is inside the <ul> tag
-                - the different hobbies defined are inside the <li> tag
+                - a list containing my hobbies is inside the ul tag
+                - the different hobbies defined are inside the li tag
     
     3. Use of forms, links, and media.
         Examples: 
             surveys.html -> line: 29 - 42
-                - the form is defined inside the <form> tag
-                - the form takes input through the <input> tag
-                - the form inputs are labelled with the <label> tag
-                - the form is submitted with the <input type="submit">
+                - the form is defined inside the form tag
+                - the form takes input through the input tag
+                - the form inputs are labelled with the label tag
+                - the form is submitted with the input type="submit"
             index.html -> line: 17 - 22
-                - the links are defined with the <a> tag
+                - the links are defined with the a tag
                 - the links use relative URLs 
             images.html -> line: 29
-                - an image is defined inside the <img> tag
+                - an image is defined inside the img tag
                 - this image has been uploaded and taken from a free image
                   hosting website (https://i.ibb.co/2FF7hQV/punpunpun.png)
             images.html -> line: 35
-                - an image is defined inside the <img> tag
+                - an image is defined inside the img tag
                 - this image is saved locally inside a folder (./assets/pictures/klassikko.png)
 
 CSS: 
