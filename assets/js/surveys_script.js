@@ -1,8 +1,13 @@
 const animalForm = document.getElementById('animalForm');
 const icecreamForm = document.getElementById('icecreamForm');
+const templateForm = document.getElementById('templateForm');
 
 const animalFormAnswer = document.getElementById('animalFormAnswer');
 const icecreamFormAnswer = document.getElementById('icecreamFormAnswer');
+
+const answeredTable = document.getElementById('answered'); 
+
+let answered = [];
 
 animalForm.addEventListener('submit', (e) => // when form is submitted
 {
@@ -14,16 +19,34 @@ animalForm.addEventListener('submit', (e) => // when form is submitted
     {
         if(item[1]=='dogs')
         {
-            animalFormAnswer.textContent = 'ALERT!! YOU ANSWERED DOGS!!!';
+            animalFormAnswer.textContent = 'You answered: Dogs! Woof!';
         }
         else if(item[1]=='cats')
         {
-            animalFormAnswer.textContent = 'ALERT!! YOU ANSWERED CATS!!!';
+            animalFormAnswer.textContent = 'You answered: Cats! Meow!';
         }
         else if(item[1]=='other')
         {
-            animalFormAnswer.textContent = 'ALERT!! YOU ANSWERED OTHER!!!';
+            animalFormAnswer.textContent = 'You answered: Other! * makes unknown sound *';
         }
+
+        answered.push(item);
+    }
+
+    for(let i = 0; i < answered.length; i++)
+    {   
+        if(i == 0)
+        {
+            answeredTable.textContent = '';
+        }    
+            
+        const tr = document.createElement('tr'); // create row
+        const td = document.createElement('td'); // create cell
+
+        td.textContent = answered[i][1];
+
+        tr.appendChild(td);
+        answeredTable.appendChild(tr);
     }
 });
 
@@ -72,4 +95,14 @@ icecreamForm.addEventListener('submit', (e) =>
     }
 
     icecreamFormAnswer.textContent = ans;
+});
+
+templateForm.addEventListener('submit', (e) =>
+{
+    e.preventDefault();
+
+    alert('\nALERT!!\n\n' +
+          '1. This button is under maintenance\n' +
+          '2. Please refrain from touching\n' +
+          '3. Thank you for understanding');
 });

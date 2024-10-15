@@ -71,14 +71,25 @@
         
         <h2>Survey 3</h2>
         <article id="query_3">
-            <p>Here lies a template survey:</p>
-            <p>Option 1 []</p>
-            <p>Option 2 []</p>
-            <p>Option 3 []</p>
+            <form id="templateForm">
+                <p>Here lies a template survey:</p>
+                <p>Option 1 []</p>
+                <p>Option 2 []</p>
+                <p>Option 3 []</p>
+
+                <input type="submit" value="Submit" id="templateQuestionSubmit">
+            </form>
         </article>
     </div>
     
-    <div class="sideContainer2"></div>
+    <div class="sideContainer2">
+        <article>
+            <h2><u>Answered</u></h2>
+            <table id="answered">
+                <!-- append <tr><td></td></tr> -->
+            </table>
+        </article>
+    </div>
 
     <script src="./assets/js/surveys_script.js"></script>
 </body>

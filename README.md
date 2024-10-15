@@ -130,4 +130,10 @@ JavaScript Basics:
     1. Simple interactions (like alerts on button click).
         Examples:
 
+    2. Multiple event listeners and basic DOM manipulations.
+
+    3. Use of arrays, objects, and functions.
+
+    4. Advanced logic, looping through data, and dynamic DOM updates.
+
 ```
