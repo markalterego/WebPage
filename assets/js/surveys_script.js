@@ -18,7 +18,7 @@ let answered = // holds the count of all survey answers
     { answer: 'other2', count: 0 },
     { answer: '???', count: 0 }
 ]; 
-
+// test
 document.addEventListener('DOMContentLoaded', () => 
 {
     if(localStorage.getItem('answered') !== null) // getting stored answered array
