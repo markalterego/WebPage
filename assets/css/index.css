@@ -107,6 +107,12 @@ td
     border: 1px solid;
 }
 
+button
+{
+    height: 21px;
+    margin-bottom: 5px;
+}
+
 @media (max-width: 1400px) { /* two images per row -> one image per row*/
     .imageColumn{
         float: none;

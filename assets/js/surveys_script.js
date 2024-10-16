@@ -18,12 +18,13 @@ let answered = // holds the count of all survey answers
     { answer: 'other2', count: 0 },
     { answer: '???', count: 0 }
 ]; 
-// test
+
 document.addEventListener('DOMContentLoaded', () => 
 {
     if(localStorage.getItem('answered') !== null) // getting stored answered array
     {
-        answered = JSON.parse(localStorage.getItem('answered'));
+        answered = JSON.parse(localStorage.getItem('answered')); // getting the saved answer counts
+        updateTable();
     }
 });
 
@@ -145,6 +146,7 @@ templateForm.addEventListener('submit', (e) =>
     lastindex.count++;
     answered.push(lastindex);
 
+    console.log(answered);
     localStorage.setItem('answered', JSON.stringify(answered)); // saving answered to localstorage as JSON string
     updateTable();
 
