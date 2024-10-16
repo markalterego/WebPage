@@ -7,7 +7,7 @@ const icecreamFormAnswer = document.getElementById('icecreamFormAnswer');
 
 const answeredTable = document.getElementById('answered'); 
 
-const answered = // holds the count of all survey answers
+let answered = // holds the count of all survey answers
 [
     { answer: 'dogs', count: 0 },
     { answer: 'cats', count: 0 },
@@ -18,6 +18,14 @@ const answered = // holds the count of all survey answers
     { answer: 'other2', count: 0 },
     { answer: '???', count: 0 }
 ]; 
+
+document.addEventListener('DOMContentLoaded', () => 
+{
+    if(localStorage.getItem('answered') !== null) // getting stored answered array
+    {
+        answered = JSON.parse(localStorage.getItem('answered'));
+    }
+});
 
 animalForm.addEventListener('submit', (e) => // when form is submitted
 {
@@ -54,6 +62,7 @@ animalForm.addEventListener('submit', (e) => // when form is submitted
     }
 
     console.log(answered);
+    localStorage.setItem('answered', JSON.stringify(answered)); // saving answered to localstorage as JSON string
     updateTable();
 });
 
@@ -124,6 +133,7 @@ icecreamForm.addEventListener('submit', (e) =>
     }
 
     console.log(answered);
+    localStorage.setItem('answered', JSON.stringify(answered)); // saving answered to localstorage as JSON string
     updateTable();
 });
 
@@ -135,6 +145,7 @@ templateForm.addEventListener('submit', (e) =>
     lastindex.count++;
     answered.push(lastindex);
 
+    localStorage.setItem('answered', JSON.stringify(answered)); // saving answered to localstorage as JSON string
     updateTable();
 
     alert('\nALERT!!\n\n' +
