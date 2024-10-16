@@ -98,10 +98,12 @@ address
 table
 {
     width: 100%;
+    border: 1px solid;
 }
 
-table, th, td
+td
 {
+    width: 50%;
     border: 1px solid;
 }
 
