@@ -72,7 +72,6 @@ icecreamForm.addEventListener('submit', (e) =>
     e.preventDefault();
 
     const formData = new FormData(icecreamForm); 
-    const p = document.createElement('p');
 
     let ans = 'You answered: ';
     let item = '';
